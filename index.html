@@ -15,184 +15,284 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- Logo -->
-    <a href="#">Phoxul</a>
-    <!-- Nav -->
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Works</a>
-    <a href="#">Gallery</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-    <!-- Hero Section -->
-    <section id="hero">
-      <h6>Welcome to</h6>
-      <h1>Phoxul Studio</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus, quaerat animi
-        ullam reiciendis.
-      </p>
-      <a href="#">My Works</a>
-      <a href="#">Contact me</a>
-    </section>
-    <!-- Personal Info Section -->
-    <section id="personal-info">
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quis.</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, explicabo dolor.
-        Expedita nostrum provident nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Dolores, facilis!
-      </p>
-      <ul>
-        <i class="fa-solid fa-check"></i>
-        <li>Over 7 Years of Experience</li>
-        <i class="fa-solid fa-check"></i>
-        <li>200+ Successfully Executed Projects</li>
-        <i class="fa-solid fa-check"></i>
-        <li>Exceptional Work Quality</li>
+  <body class="container">
+    <!--------------------- Header -->
+    <header class="header overall-layout">
+      <!-- Logo -->
+      <a class="header__logo" href="#">Phoxul</a>
+      <!-- Nav -->
+      <ul class="header__nav">
+        <a class="header__nav--link" href="#">Home</a>
+        <a class="header__nav--link" href="#">About</a>
+        <a class="header__nav--link" href="#">Services</a>
+        <a class="header__nav--link" href="#">Works</a>
+        <a class="header__nav--link" href="#">Gallery</a>
+        <a class="header__nav--link" href="#">Blog</a>
+        <a class="header__nav--link" href="#">Contact</a>
       </ul>
-      <img src="assets/personal-info-img.jpg" alt="Personal Image" />
+    </header>
+
+    <!--------------------- Hero Section -->
+    <section class="hero overall-layout section__padding">
+      <div class="hero__content">
+        <h6 class="hero__content--mini-title">Welcome to</h6>
+        <h1 class="hero__content--title">Phoxul Studio</h1>
+        <p class="hero__content--para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus, quaerat animi
+          ullam reiciendis.
+        </p>
+        <div class="hero__content--links">
+          <a class="hero__content--links__my-works" href="#">My Works</a>
+          <a class="hero__content--links__contact" href="#">Contact me</a>
+        </div>
+      </div>
+      <figure class="hero__bg">
+        <img loading="lazy" src="assets/hero-bg.jpg" alt="Studio" />
+      </figure>
     </section>
-    <!-- Services Section -->
-    <section id="services">
-      <h2>My Services</h2>
-      <p>
+
+    <!------------ Personal Info Section -->
+    <section class="personal-info overall-layout section__padding">
+      <div class="personal-info__content">
+        <h2 class="personal-info__content--title section__title">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quis.
+        </h2>
+        <p class="personal-info__content--para section__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, explicabo dolor.
+          Expedita nostrum provident nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolores, facilis!
+        </p>
+        <ul class="personal-info__content--experience">
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <li class="section__para">Over 7 Years of Experience</li>
+          </div>
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <li class="section__para">200+ Successfully Executed Projects</li>
+          </div>
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <li class="section__para">Exceptional Work Quality</li>
+          </div>
+        </ul>
+      </div>
+      <figure class="personal-info__img">
+        <img loading="lazy" src="assets/personal-info-img.jpg" alt="Personal Image" />
+      </figure>
+    </section>
+    <!----------------- Services Section -->
+    <section class="services overall-layout section__padding">
+      <h2 class="services__title section__title">My Services</h2>
+      <p class="services__para section__para">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deserunt delectus repellat
-        iusto suscipit possimus voluptatibus excepturi beatae laudantium cupiditate!
+        <span>iusto suscipit possimus voluptatibus excepturi beatae laudantium cupiditate!</span>
       </p>
-      <!-- Service 1 -->
-      <div class="service">
-        <i class="fa-solid fa-camera"></i>
-        <h3>Photography</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
-      </div>
-      <!-- Service 2 -->
-      <div class="service">
-        <i class="fa-solid fa-video"></i>
-        <h3>Videography</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
-      </div>
-      <!-- Service 3 -->
-      <div class="service">
-        <i class="fa-solid fa-brush"></i>
-        <h3>Photo Retouching</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
-      </div>
-      <!-- Service 4 -->
-      <div class="service">
-        <i class="fa-solid fa-camera"></i>
-        <h3>Aerial Photography</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
-      </div>
-      <!-- Service 5 -->
-      <div class="service">
-        <i class="fa-solid fa-lightbulb"></i>
-        <h3>Lightning Setup</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
-      </div>
-      <!-- Service 6 -->
-      <div class="service">
-        <i class="fa-solid fa-ruler-combined"></i>
-        <h3>Video color Grading</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
+
+      <div class="services__service-cards">
+        <!-- card 1 -->
+        <div class="services__service-cards--card">
+          <i class="fa-solid fa-camera"></i>
+          <h3>Photography</h3>
+           <p class="section__para"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
+        </div>
+        <!-- card 2 -->
+        <div class="services__service-cards--card">
+          <i class="fa-solid fa-video"></i>
+          <h3>Videography</h3>
+           <p class="section__para"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
+        </div>
+        <!-- card 3 -->
+        <div class="services__service-cards--card">
+          <i class="fa-solid fa-brush"></i>
+          <h3>Photo Retouching</h3>
+           <p class="section__para"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
+        </div>
+        <!-- card 4 -->
+        <div class="services__service-cards--card">
+          <i class="fa-solid fa-camera"></i>
+          <h3>Aerial Photography</h3>
+           <p class="section__para"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
+        </div>
+        <!-- card 5 -->
+        <div class="services__service-cards--card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h3>Lightning Setup</h3>
+           <p class="section__para"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
+        </div>
+        <!-- card 6 -->
+        <div class="services__service-cards--card">
+          <i class="fa-solid fa-ruler-combined"></i>
+          <h3>Video color Grading</h3>
+           <p class="section__para"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos?</p>
+        </div>
       </div>
     </section>
-    <!-- News Section -->
-    <section id="news">
-      <h2>Latest News</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda.</p>
-      <h6>Resources</h6>
-      <h3>Cosina announces its fastest full-frame lens</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id!</p>
-      <a href="#">Read More</a>
-      <p>31 Aug 2022</p>
+    <!---------------------- News Section -->
+    <section class="news overall-layout section__padding">
+      <div class="news__info">
+        <h2 class="news__info--title section__title">Latest News</h2>
+        <p class="news__info--para section__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda.
+        </p>
+      </div>
+      <article class="news__article">
+        <div class="news__article--content">
+          <h6 class="news__article--content__mini-title">Resources</h6>
+          <h3 class="news__article--content__title">
+            Cosina announces its fastest full-frame lens
+          </h3>
+          <p class="news__article--content__para section__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, class!
+          </p>
+          <div>
+            <a class="news__article--content__link" href="#">Read More</a>
+            <p class="news__article--content__date section__para">31 Aug 2022</p>
+          </div>
+        </div>
+        <figure class="news__article--img">
+          <img loading="lazy" src="assets/news-img.jpeg" alt="Cosina Lens" />
+        </figure>
+      </article>
     </section>
-    <!-- My works Section -->
-    <section id="my-works">
-      <h2>My Works</h2>
-      <ul>
-        <li>All</li>
-        <li>Personal</li>
-        <li>Wedding</li>
-        <li>Event</li>
-        <li>Fashion</li>
-        <li>Product</li>
+    <!------------------ My works Section -->
+    <section class="my-works overall-layout section__padding">
+      <h2 class="my-works__title section__title">My Works</h2>
+      <ul class="my-works__areas">
+        <li class="my-works__areas--area section__para">All</li>
+        <li class="my-works__areas--area section__para">Personal</li>
+        <li class="my-works__areas--area section__para">Wedding</li>
+        <li class="my-works__areas--area section__para">Event</li>
+        <li class="my-works__areas--area section__para">Fashion</li>
+        <li class="my-works__areas--area section__para">Product</li>
       </ul>
-      <!-- My works Image 1 -->
-      <img src="images/my-works/my-work-1.jpg" alt="My Works" />
-      <!-- My works Image 2 -->
-      <img src="images/my-works/my-work-2.jpg" alt="My Works" />
-      <!-- My works Image 3 -->
-      <img src="images/my-works/my-work-3.jpg" alt="My Works" />
-      <!-- My works Image 4 -->
-      <img src="images/my-works/my-work-4.jpg" alt="My Works" />
-      <!-- My works Image 5 -->
-      <img src="images/my-works/my-work-5.jpg" alt="My Works" />
-      <!-- My works Image 6 -->
-      <img src="images/my-works/my-work-6.jpg" alt="My Works" />
-      <!-- My works Image 7 -->
-      <img src="images/my-works/my-work-7.jpg" alt="My Works" />
-      <!-- My works Image 8 -->
-      <img src="images/my-works/my-work-8.jpg" alt="My Works" />
+      <div class="my-works__imgs">
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-1.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-2.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-3.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-4.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-5.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-6.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-7.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-8.jpg" alt="My Works" loading="lazy" />
+        </figure>
+        <figure class="my-works__imgs--img">
+          <img src="images/my-works/my-work-9.jpg" alt="My Works" loading="lazy" />
+        </figure>
+      </div>
     </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Need help with professional photography? Let's work together</h2>
-      <a href="#">Contact Me</a>
-      <!-- Contact Image 1 -->
-      <img src="images/contact/icon-1.png" alt="Clients" />
-      <!-- Contact Image 2 -->
-      <img src="images/contact/icon-2.png" alt="Clients" />
-      <!-- Contact Image 3 -->
-      <img src="images/contact/icon-3.png" alt="Clients" />
-      <!-- Contact Image 4 -->
-      <img src="images/contact/icon-4.png" alt="Clients" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, consectetur eos deserunt
-        quae iusto maxime dolores, deleniti sapiente odit cumque, itaque consequatur. Dolores,
-        tenetur cumque!
-      </p>
-      <img src="assets/contact-img.jpg" alt="Testimonial" />
-      <p>James Brown</p>
-      <p>CEO, ColorImage</p>
+    <!------------------- Contact Section -->
+    <section class="contact overall-layout parallax section__padding">
+      <div class="contact__info">
+        <h2 class="contact__info--title">
+          Need help with professional photography? Let's work together
+        </h2>
+        <a class="contact__info--link" href="#">Contact Me</a>
+      </div>
+      <div class="contact__testimonial">
+        <p class="contact__testimonial--para section__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, consectetur eos deserunt
+          quae iusto maxime dolores, deleniti sapiente odit cumque, itaque consequatur. Dolores,
+          tenetur cumque!
+        </p>
+        <div class="contact__testimonial--info">
+          <figure class="contact__testimonial--info__img">
+            <img loading="lazy" src="assets/contact-img.jpg" alt="James Brown" />
+          </figure>
+          <div>
+            <p class="contact__testimonial--info__name">James Brown</p>
+            <p class="contact__testimonial--info__role">CEO, ColorImage</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Newsletter Section  -->
-    <section id="newsletter">
-      <h2>Sign up to get latest update</h2>
-      <p>Sign up for our monthly newsletter for the lastest news & articles</p>
-      <input type="Email" placeholder="Enter Your Email" />
-      <input type="submit" value="Subscribe Noew" />
-      <a href="#">Phoxul</a>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo quidem unde
-        ullam velit id mollitia voluptatem culpa tempora quo aliquam error voluptate, facere laborum
-        quam accusantium repudiandae quae voluptatibus harum molestiae. Alias, provident ipsum?
-      </p>
+    <!----------------- Client Section -->
+    <section class="clients overall-layout">
+      <figure class="clients__client">
+        <img src="images/contact/icon-1.png" alt="Client" loading="lazy" />
+      </figure>
+      <figure class="clients__client">
+        <img src="images/contact/icon-2.png" alt="Client" loading="lazy" />
+      </figure>
+      <figure class="clients__client">
+        <img src="images/contact/icon-3.png" alt="Client" loading="lazy" />
+      </figure>
+      <figure class="clients__client">
+        <img src="images/contact/icon-4.png" alt="Client" loading="lazy" />
+      </figure>
     </section>
-    <!-- Footer -->
-    <footer id="footer">
-      <h3>Quick Links</h3>
-      <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Works</li>
-        <li>Blog</li>
-      </ul>
-      <h3>Contact</h3>
-      <ul>
-        <i class="fa-solid fa-square-phone"></i>
-        <li>+93 123 456 7890</li>
-        <i class="fa-solid fa-envelope"></i>
-        <li>el@el.com</li>
-        <i class="fa-solid fa-address-card"></i>
-        <li>177A Bleecker Street, NYC, USA</li>
-      </ul>
-      <p>&copy; 2022 by Jettapol Tuetrakul. All Right Reserved.</p>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+    <!--------------------- Footer -->
+    <footer class="footer overall-layout section__padding">
+      <div class="footer__newsletter">
+        <div class="footer__newsletter--content">
+          <h2 class="footer__newsletter--content__title">Sign up to get latest update</h2>
+          <p class="footer__newsletter--content__para">
+            Sign up for our monthly newsletter for the lastest news & articles
+          </p>
+        </div>
+        <form class="footer__newsletter--form">
+          <input type="Email" placeholder="Enter Your Email" />
+          <input type="submit" value="Subscribe Now" />
+        </form>
+      </div>
+      <div class="footer__author">
+        <div class="footer__author--info">
+          <a class="header__logo" href="#">Phoxul</a>
+          <p class="footer__author--info__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo quidem unde
+            ullam velit id mollitia voluptatem.
+          </p>
+        </div>
+        <div class="footer__author--quick-links">
+          <h3 class="footer__author--quick-links__title">Quick Links</h3>
+          <ul class="footer__author--quick-links__container">
+            <li>About</li>
+            <li>Services</li>
+            <li>Works</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="footer__author-contact">
+          <h3 class="footer__author-contact__title">Contact</h3>
+          <ul class="footer__author-contact__container">
+            <div>
+              <i class="fa-solid fa-square-phone"></i>
+              <li>+93 123 456 7890</li>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <li>el@el.com</li>
+            </div>
+            <div>
+              <i class="fa-solid fa-address-card"></i>
+              <li>177A Bleecker Street, NYC, USA</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copy-right">
+        <p>&copy; 2022 by Jettapol Tuetrakul. All Right Reserved.</p>
+        <div class="footer__copy-right--social">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
     </footer>
     <!-- Script -->
     <script src="script.js"></script>
