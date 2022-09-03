@@ -836,6 +836,10 @@ li {
   gap: 2rem 0;
 }
 
+.footer__author--quick-links__container a {
+  color: var(--color-quaternary);
+}
+
 .footer__author--quick-links__container a:hover {
   color: var(--color-primary);
 }
