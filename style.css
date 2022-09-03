@@ -105,6 +105,10 @@
   --font-family-content: "Plus Jakarta Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: var(--font-family-content);

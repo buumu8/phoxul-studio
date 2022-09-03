@@ -23,12 +23,12 @@
       <!-- Nav -->
       <nav class="header__nav" id="header_nav">
         <a class="header__nav--link" href="#">Home</a>
-        <a class="header__nav--link" href="#">About</a>
-        <a class="header__nav--link" href="#">Services</a>
-        <a class="header__nav--link" href="#">Works</a>
-        <a class="header__nav--link" href="#">Gallery</a>
-        <a class="header__nav--link" href="#">Blog</a>
-        <a class="header__nav--link" href="#">Contact</a>
+        <a class="header__nav--link" href="#about">About</a>
+        <a class="header__nav--link" href="#services">Services</a>
+        <a class="header__nav--link" href="#works">Works</a>
+        <a class="header__nav--link" href="#gallery">Gallery</a>
+        <a class="header__nav--link" href="#blog">Blog</a>
+        <a class="header__nav--link" href="#contact">Contact</a>
       </nav>
 
       <div class="hamburger" id="hamburger">
@@ -39,7 +39,7 @@
     </header>
 
     <!--------------------- Hero Section -->
-    <section class="hero overall-layout section__padding">
+    <section id="hero" class="hero overall-layout section__padding">
       <div class="hero__content">
         <h6 class="hero__content--mini-title">Welcome to</h6>
         <h1 class="hero__content--title">Phoxul Studio</h1>
@@ -58,7 +58,7 @@
     </section>
 
     <!------------ Personal Info Section -->
-    <section class="personal-info overall-layout section__padding">
+    <section id="about" class="personal-info overall-layout section__padding">
       <div class="personal-info__content">
         <h2 class="personal-info__content--title section__title">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quis.
@@ -88,7 +88,7 @@
       </figure>
     </section>
     <!----------------- Services Section -->
-    <section class="services overall-layout section__padding">
+    <section id="services" class="services overall-layout section__padding">
       <h2 class="services__title section__title">My Services</h2>
       <p class="services__para section__para">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deserunt delectus repellat
@@ -135,7 +135,7 @@
       </div>
     </section>
     <!---------------------- News Section -->
-    <section class="news overall-layout section__padding">
+    <section id="blog" class="news overall-layout section__padding">
       <div class="news__info">
         <h2 class="news__info--title section__title">Latest News</h2>
         <p class="news__info--para section__para">
@@ -162,7 +162,7 @@
       </article>
     </section>
     <!------------------ My works Section -->
-    <section class="my-works overall-layout section__padding">
+    <section id="works" class="my-works overall-layout section__padding">
       <h2 class="my-works__title section__title">My Works</h2>
       <ul class="my-works__areas">
         <li class="my-works__areas--area section__para">All</li>
@@ -172,7 +172,7 @@
         <li class="my-works__areas--area section__para">Fashion</li>
         <li class="my-works__areas--area section__para">Product</li>
       </ul>
-      <div class="my-works__imgs">
+      <div id="gallery" class="my-works__imgs">
         <figure class="my-works__imgs--img">
           <img src="images/my-works/my-work-1.jpg" alt="My Works" loading="lazy" />
         </figure>
@@ -203,7 +203,7 @@
       </div>
     </section>
     <!------------------- Contact Section -->
-    <section class="contact overall-layout parallax section__padding">
+    <section id="contact" class="contact overall-layout parallax section__padding">
       <div class="contact__info">
         <h2 class="contact__info--title">
           Need help with professional photography? Let's work together
@@ -267,10 +267,10 @@
         <div class="footer__author--quick-links">
           <h3 class="footer__author--quick-links__title">Quick Links</h3>
           <ul class="footer__author--quick-links__container">
-            <li>About</li>
-            <li>Services</li>
-            <li>Works</li>
-            <li>Blog</li>
+            <li><a href='#'>About</a></li>
+            <li><a href='#services'>Services</a></li>
+            <li><a href='#works'>Works</a></li>
+            <li><a href='#blog'>Blog</a></li>
           </ul>
         </div>
         <div class="footer__author-contact">
