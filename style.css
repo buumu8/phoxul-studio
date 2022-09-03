@@ -327,6 +327,11 @@ li {
   border-radius: 50%;
   background-color: var(--color-secondary);
   color: var(--color-primary);
+  transition: all 0.3s ease-in;
+}
+
+.personal-info__content--experience div i:hover {
+  font-size: calc(1rem + var(--font-size-st-sc));
 }
 
 .personal-info__img {
@@ -368,7 +373,7 @@ li {
 }
 
 .personal-info__img:hover img {
-  transform: scale(95%);
+  transform: scale(105%);
 }
 
 /* *******************************SERVICES */
@@ -406,8 +411,13 @@ li {
   padding: var(--padding-st-l-h) 0;
 }
 
+.services__service-cards--card:hover i {
+  font-size: calc(1rem + var(--font-size-st-l));
+}
+
 .services__service-cards--card i {
   font-size: var(--font-size-st-l);
+  transition: all 0.3s ease-in;
 }
 
 .services__service-cards--card h3 {
@@ -590,6 +600,7 @@ li {
 
 .my-works__imgs--img:hover img {
   filter: brightness(130%);
+  transform: scale(110%);
 }
 
 .my-works__imgs--img:nth-child(1) {
@@ -823,6 +834,10 @@ li {
   display: flex;
   flex-direction: column;
   gap: 2rem 0;
+}
+
+.footer__author--quick-links__container a:hover {
+  color: var(--color-primary);
 }
 
 .footer__author--quick-links__container li,
